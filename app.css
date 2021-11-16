@@ -1,0 +1,43 @@
+html{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-size: 100%;
+}
+body{
+    background-color: #34588e;
+    
+}
+.logo{
+    margin: 30px;
+    border-radius: 50%;
+    background: #34588e;
+    border: 10px solid white;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+.logo::after{
+    content: "";
+    border-radius: 50%;
+    background-color: #da473c;
+    height: 500px;
+    width: 550px;
+    top: -275px;
+    left: -300px;
+    z-index: 1;
+    position: absolute;
+}
+.logo::before{
+    content: "";
+    border-radius: 25%;
+    background-color: white;
+    height: 400px;
+    width: 500px;
+    top: -170px;
+    left: -240px;
+    transform: rotate(-15deg);
+    position: absolute;
+
+}
